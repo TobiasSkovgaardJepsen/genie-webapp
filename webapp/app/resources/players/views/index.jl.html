@@ -1,0 +1,14 @@
+<h1 class="display-1 text-center">2018 FIFA World Cup Player Value Analysis</h1>
+<% for_each(players) do player %>
+    <div class="container" style="margin-top: 40px;">
+        <h3><% player.name %></h3>
+        <ul>
+            <li><em>Value Per Minute: </em> <% player.value_per_minute.total %> </li>
+            <ul>
+                <li><em>Offensive: </em> <% player.value_per_minute.offensive %></li>
+                <li><em>Defensive: </em> <% player.value_per_minute.defensive %></li>
+            </ul>
+            <li><em>Minutes Played: </em> <% player.minutes_played %></li>
+        </ul>
+    </div>
+<% end %>
